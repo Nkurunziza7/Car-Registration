@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>88</x>
+      <y>24</y>
+      <w>168</w>
+      <h>520</h>
+    </coordinates>
+    <panel_attributes> CarRegistration  
+--
+- basePrice: double
+- upgradeCoefficient: double
+- colorIndex: double
+- firstName: String
+- lastName: String
+- gender: String
+- birthYear: int
+- occupation: String
+- yearlyIncome: double
+- approved: boolean
+- customerAge: int
++ currentYear: int (static)  
+--
++ CarRegistration()
++ getBasePrice(): double
++ setBasePrice(double): void
++ getUpgradeCoefficient(): double
++ setUpgradeCoefficient(double): void
++ getColorIndex(): double
++ setColorIndex(double): void
++ getFirstName(): String
++ setFirstName(String): void
++ getLastName(): String
++ setLastName(String): void
++ getGender(): String
++ setGender(String): void
++ getBirthYear(): int
++ setBirthYear(int): void
++ getOccupation(): String
++ setOccupation(String): void
++ getYearlyIncome(): double 
++ setYearlyIncome(double): void
++ isApproved(): boolean
++ getCustomerAge(): int
++ calculateAge(): int
++ isPreApproved(): boolean
++ isEligibleToDrive(): void
++ displayCustomerInfo(): void </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>328</x>
+      <y>64</y>
+      <w>168</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>CarSelection      
+--
++ calculateCarPrice() : double
++ incorrectCarPrice() : double 
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>568</x>
+      <y>64</y>
+      <w>168</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>CarRegistrationTest
+--
++ main(String[]): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
